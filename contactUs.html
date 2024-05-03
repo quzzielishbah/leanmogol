@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Car Collection</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="images/logo.png" width="700">
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="home.html" class="">HOME</a></li>
+					<li><a href="collection.html" class="">COLLECTION</a></li>
+					<li><a href="aboutUs.html" class="">ABOUT US</a></li>
+					<li><a href="" class="active">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<div class="my-car">
+					<div><img src="images/1.jpg"></div>
+					<div><img src="images/2.jpg"></div>
+					<div><img src="images/3.jpg"></div>
+					<div><img src="images/4.jpg"></div>
+					<div><img src="images/5.jpg"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="contact-us">
+				  <h1>Contact Us</h1>
+				</div>
+				 <div class="wrapper2">
+				    <form action="" method="POST">
+				      <div class="form-group">
+				        <label for="name">Full Name</label>
+				        <input type="text" name="Name" id="name" placeholder="First and Last" required minlength="3" maxlength="25" />
+				      </div>
+				      <div class="form-group">
+				        <label for="email">Email Address</label>
+				        <input type="email" name="Email" id="email" placeholder="email@domain.tld" required />
+				      </div>
+				      <div class="form-group">
+				        <label for="message">Message</label>
+				        <textarea name="Message" id="message" rows="5" placeholder="Type your message here...."></textarea>
+				      </div>
+				      <div class="form-group">
+				        <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Send</button>
+				      </div>
+				    </form>
+				  </div>
+			</div>
+
+			<footer>
+				<div class="footer">
+				<p>
+					&copy;2024 Rhizzaldy Lean Mogo & Jhon Romel Historill  <br> Bachelor of Science in Information Technology <br> All Rights Reserved.
+				</p>
+				<div class="social-links">
+			        <a href="https://www.facebook.com/rhizzaldylean.mogol"><i class="fab fa-facebook-f"></i></a>
+			        <a href="https://www.instagram.com/lean_doesrizzz"><i class="fab fa-instagram"></i></a>
+			        <a href="https://github.com/RLMogol"><i class="fab fa-github"></i></a>
+			        <a href="https://www.tiktok.com/@leanmogol"><i class="fab fa-tiktok"></i></a>
+			     </div>
+				</div>
+			</footer>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".my-car").slick({
+			autoplay:true,
+			dots:true,
+			speed:1000,
+		})
+		});
+	</script>
+	</body>
+</html>
